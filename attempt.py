@@ -8,10 +8,10 @@
 #print(foo(5))
 
 #def sayhi(name):
- #   if name == "mark lindahl":
-  #      return "YOU CUNT"
-   ## elif name == "zoe smithurst":
-     #   return "YOU SLAG"
+ #   if name == "chloe":
+  #      return "Hello!!"
+   ## elif name == "Fred":
+     #   return "Your not Chloe"
     #else:
      #   return "hello " + name+"!"
 

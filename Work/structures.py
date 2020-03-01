@@ -1,36 +1,60 @@
-import tkinter
 from tkinter import *
+from tkinter import Tk, Button, Entry, Label, StringVar
+import tkinter.ttk as ttk
 
-window = tkinter.Tk()
-window.title("barrier testing")
+app = Tk()
+app.title("Kiwa site calculations")
+app.resizable(0, 0)
+s = ttk.Style()
+app.geometry("750x300")
+s.theme_use("winnative")
 
-tkinter.Label(window, text = "Client").grid(row = 0)
-tkinter.Entry(window).grid(row = 1, column = 0)
 
-tkinter.Label(window, text = "Site").grid(row = 0, column = 1)
-tkinter.Entry(window).grid(row = 1, column = 1)
+L1 = Label(app, text="Client",
+           pady=15,
+           padx=10).grid(row=0)
+E1 = Entry(app).grid(row=1, column=0)
 
-tkinter.Label(window, text = "Location").grid(row = 0, column = 2)
-tkinter.Entry(window).grid(row = 1, column = 2)
+L2 = Label(app, text = "Site",
+           pady=15,
+           padx=30).grid(row=0, column=1)
+E2 = Entry(app).grid(row=1, column=1)
 
-tkinter.Label(window, text = "Date").grid(row = 0, column = 3)
-tkinter.Entry(window).grid(row = 1, column = 3)
+L3 = Label(app, text="Location",
+           pady=15,
+           padx=30).grid(row = 0, column = 2)
+E3 = Entry(app).grid(row=1, column=2)
 
-tkinter.Label(window, text = "Job Reference").grid(row = 0, column = 4)
-tkinter.Entry(window).grid(row = 1, column = 4)
+L4 = Label(app, text="Job REF.",
+           pady=15,
+           padx=30).grid(row=0, column=3)
+E4 = Entry(app).grid(row=1, column=3)
 
-tkinter.Label(window, text = "Barrier REF. No.").grid(row = 2, column = 0)
-tkinter.Entry(window).grid(row = 2, column = 1)
+L5 = Label(app, text="DATE",
+           pady=15,
+           padx=30).grid(row=0, column=4)
+E5 = Entry(app).grid(row=1, column=4)
 
-tkinter.Label(window, text = "SPECIFIED LOAD/m, BEDDING").grid(row = 3, column = 0)
-tkinter.Entry(window).grid(row = 3, column = 1)
+L6 = Label(app, text="barrier REF. No.",
+           pady=5,
+           padx=0).grid(row=3)
+E6 = Entry(app).grid(row=3, column=1)
 
-height  = 10
-width = 10
-for i in range(height):
-    for j in range(width):
-        tkinter.Entry(window, text= "comments").grid(row=2, column=2)
+L7 = Label(app, text="Specified load/m(Bedding)",
+           pady=5,
+           padx=0).grid(row=4)
+E7 = Entry(app).grid(row=4, column=1)
+L7a = Label(app, text="Kn/m",
+            pady=0,
+            padx=0).grid(row=4, column=2)
 
-window.mainloop()
+
+#height  = 10
+#width = 10
+#for i in range(height):
+ #   for j in range(width):
+  #      tkinter.Entry(app, text= "comments").grid(row=2, column=2)
+
+app.mainloop()
 
 

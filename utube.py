@@ -34,7 +34,6 @@ while guess != secretword and not(outofguesses):
         outofguesses = True
 
 if outofguesses:
-    print("out of guesses suckaaa!!")
+    print("out of guesses!!")
 else:
-    print("you win murrfuckaaa")
-
+    print("you win!!")
