@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e8cafdf6-2c68-496e-ac1c-420155281a04" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/btesting-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/btesting-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/btesting.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/btesting.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/structures.py" beforeDir="false" afterPath="$PROJECT_DIR$/structures.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kiwa_gui/Kiwalogo1050x525.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kiwa_gui/app.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapping/mapping.html" beforeDir="false" afterPath="$PROJECT_DIR$/../mapping/mapping.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapping/mapping.py" beforeDir="false" afterPath="$PROJECT_DIR$/../mapping/mapping.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../resources.pandas/extractdata.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../resources.pandas/extractdata.ipynb" afterDir="false" />
-    </list>
+    <list default="true" id="e8cafdf6-2c68-496e-ac1c-420155281a04" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,9 +56,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1581867653410" />
-    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1582228182169">
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1583963882759">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1582228182169" />
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1583963882759" />
   </component>
 </project>

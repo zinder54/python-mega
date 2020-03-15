@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46ecd73e-5115-4440-a05c-2eaebbd427b2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Work/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Work/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Work/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Work/.ipynb_checkpoints/btesting-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Work/.ipynb_checkpoints/btesting-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Work/btesting.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Work/btesting.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mapping/mapping.html" beforeDir="false" afterPath="$PROJECT_DIR$/mapping/mapping.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mapping/mapping.py" beforeDir="false" afterPath="$PROJECT_DIR$/mapping/mapping.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources.pandas/extractdata.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/resources.pandas/extractdata.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/simple.py" beforeDir="false" afterPath="$PROJECT_DIR$/Work/simple.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/structures.py" beforeDir="false" afterPath="$PROJECT_DIR$/Work/structures.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utube.py" beforeDir="false" afterPath="$PROJECT_DIR$/utube.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -199,9 +196,20 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1578250699037" />
-    <state x="378" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1580758229550">
+    <state x="378" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1584303047963">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="378" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1580758229550" />
+    <state x="378" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1584303047963" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Work/structures.py</url>
+          <line>10</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
