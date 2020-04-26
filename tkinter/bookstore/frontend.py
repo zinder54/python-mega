@@ -14,14 +14,14 @@ close
 from tkinter import *
 
 #imports backend py file
-import backend
+from oopbe import database
 
-
+Database = database("books.db")
 
 def get_selected_row(event):
-    global selected_tuple
-    #if lb.curselection(): <one way below is another
-    try:
+    #try:  #<one way below is another
+    if lb.curselection():
+        global selected_tuple
         index=lb.curselection()[0]
         selected_tuple=lb.get(index)
         e1.delete(0,END)
@@ -32,33 +32,33 @@ def get_selected_row(event):
         e3.insert(END,selected_tuple[3])
         e4.delete(0,END)
         e4.insert(END,selected_tuple[4])
-    except indexerror:
-        pass
+    #except indexerror:
+    #    pass
 
 
 #creates for loop for rows in backend def view function for sqlite3 and inserts
 #into Listbox
 def view_command(): #creates function to call view function in backend and connect to listbox
     lb.delete(0, END)# deletes any data in the list box before presenting new
-    for rows in backend.view(): #creates for loop to go through db and return rows
+    for rows in Database.view(): #creates for loop to go through db and return rows
         lb.insert(END, rows) # inserts the data collected from backend inserts to listbox
 
 def search_command():
     lb.delete(0, END)
-    for rows in backend.search(title_text.get(),author_text.get(),year_text.get(),isbn_text.get()):
+    for rows in Database.search(title_text.get(),author_text.get(),year_text.get(),isbn_text.get()):
         lb.insert(END, rows)
 
 def add_command():
-    backend.insert(title_text.get(),author_text.get(),year_text.get(),isbn_text.get())
+    Database.insert(title_text.get(),author_text.get(),year_text.get(),isbn_text.get())
     lb.delete(0,END)
     lb.insert(END,(title_text.get(),author_text.get(),year_text.get(),isbn_text.get()))
 
 def delete_command():
-    backend.delete(selected_tuple[0])
+    Database.delete(selected_tuple[0])
 
 
 def update_command():
-    backend.update(selected_tuple[0],title_text.get(),author_text.get(),year_text.get(),isbn_text.get())
+    Database.update(selected_tuple[0],title_text.get(),author_text.get(),year_text.get(),isbn_text.get())
 #tkiner gui
 
 window = Tk()
