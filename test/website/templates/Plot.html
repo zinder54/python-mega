@@ -1,0 +1,11 @@
+{%extends "layout.html"%}
+{%block content%}
+<script type="text/javascript" src={{cdn_js | safe}}></script>
+<div class="/Plot/">
+    <h1>Amazon Stock Chart</h1>
+    <p>The below chart shows the stock data for amazon between: 10,03,2019 and 10,05,2019</p>
+    <p>It is fully interactive with all possible options available shown to the right of the graph</p>
+</div>
+{{script1 | safe}}
+{{div1 | safe}}
+{%endblock%}

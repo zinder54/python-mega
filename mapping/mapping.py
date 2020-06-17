@@ -15,7 +15,8 @@ def colourProducer(elevation): ##creates a function to change colour of markers
     else:
         return "red"
 
-maps = folium.Map(location=[36.1699, -115.1398], zoom_start=5, tiles= "stamen terrain")#creates the map and points to location
+maps = folium.Map(location=[36.1699, -115.1398], zoom_start=5, tiles= "stamen terrain",
+                  width='75%', height='75%')#creates the map and points to location
 # adds a certain tile and how much to zoom in to said location
 fgv=folium.FeatureGroup(name="valcanoes") ##creates the markers/layers on the map
 

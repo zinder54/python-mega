@@ -1,12 +1,12 @@
 import cv2, time, pandas as pd
 from datetime import datetime
 
-video=cv2.VideoCapture(0)
-
 first_frame=None
 status_list=[None,None]
 times=[]
 df=pd.DataFrame(columns=["start","end"])
+
+video=cv2.VideoCapture(0)
 
 while True:
     check, frame = video.read() #python takes the first frame
@@ -30,6 +30,8 @@ while True:
         (x,y,w,h)=cv2.boundingRect(contours)
         cv2.rectangle(frame, (x,y), (x+w,y+h), (0,255,0),3)#adds in a rectangle around contours
     status_list.append(status) #appends status where applicable from ==0 to ==1
+
+    status_list=status_list[-2:]
 
     if status_list[-1] ==1 and status_list[-2]==0:
         times.append(datetime.now())#if status append from ==0 to ==1 apped times with date and time

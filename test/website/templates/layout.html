@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <title>Flask App</title>
+       <link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.min.css' )}}"
+       <!-- ^^ links it to the css file in the static folder for formatting -->
+   </head>
+  <body>
+    <header>
+      <div class='container'>
+        <h1 class="logo">Alexs' WebApp</h1>
+        <strong><nav>
+          <ul class='menu'>
+            <li><a href="{{url_for('home') }}">home</a></li>
+            <li><a href="{{url_for ('about') }}">about</a></li>
+            <li><a href="{{url_for ('Plot') }}">Plot</a></li>
+          </ul>
+        </nav></strong>
+      </div>
+    </header>
+    <div class="container">
+        {%block content%}
+        {%endblock%}
+  </body>
+</html>
