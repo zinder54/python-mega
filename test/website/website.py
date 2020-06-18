@@ -3,8 +3,8 @@ import folium
 
 app =Flask(__name__) #creates the app
 
-@app.route('/Plot/')
-def Plot():
+@app.route('/portfolio/bokeh-chart')
+def portfolio():
     from pandas_datareader import data
     import datetime
     from bokeh.plotting import show,figure, output_file
@@ -43,20 +43,20 @@ def Plot():
            hours_12,df.height[df.status=="decrease"],fill_color="#CD5C5C",line_color="black")
     script1, div1, = components(p)
     cdn_js=CDN.js_files[0]
-    return render_template("Plot.html",script1=script1,div1=div1,cdn_js=cdn_js)
+    return render_template("portfolio-details.html",script1=script1,div1=div1,cdn_js=cdn_js)
 
 
 @app.route('/') ##creates the page and its location
 def home():#creates function for said page
     return render_template("index.html")##renders the page and points to html in templates folder
 
-@app.route('/about/') ##same as above but for about
+@app.route('/portfolio/folium-map') ##same as above but for about
 def about():
-    # coronamap = folium.Map(location=[36.1699, -115.1398],
-    #                         zoom_start=5, tiles= "stamen terrain",
-    #                         width='75%',
-    #                         height='75%')
-    return render_template("about.html")
+    return render_template("folium-map.html")
+
+@app.route('/plot')
+def plot():
+     return render_template('portfolio-details.html')
 
 if __name__ =="__main__": ##creates an if statement so this csnnot be imported otherwise it will
 ##be runnin on multiple servers

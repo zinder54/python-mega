@@ -10,22 +10,22 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="static/img/favicon.png" rel="icon">
-  <link href="static/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="../static/img/favicon.png" rel="icon">
+  <link href="../static/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="static/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="static/vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="static/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="static/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../static/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="../static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../static/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="../static/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="../static/vendor/aos/aos.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="static/css/style.css" rel="stylesheet">
+  <link href="../static/css/style.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: iPortfolio - v1.2.1
@@ -45,7 +45,7 @@
     <div class="d-flex flex-column">
 
       <div class="profile">
-        <img src="static/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+        <img src="../static/img/profile.jpg" alt="" class="img-fluid rounded-circle">
         <h1 class="text-light"><a href="index.html">Alex Brown</a></h1>
         <div class="social-links mt-3 text-center">
           <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
@@ -58,12 +58,10 @@
 
       <nav class="nav-menu">
         <ul>
-          <li class="active"><a href="index.html"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="#about"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="#resume"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          <li><a href="#portfolio"><i class="bx bx-book-content"></i> Portfolio</a></li>
-          <li><a href="#services"><i class="bx bx-server"></i> Services</a></li>
-          <li><a href="#contact"><i class="bx bx-envelope"></i> Contact</a></li>
+          <li class="active"><a href="/"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="/#about"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="/#portfolio"><i class="bx bx-book-content"></i> Portfolio</a></li>
+          <li><a href="/#contact"><i class="bx bx-envelope"></i> Contact</a></li>
 
         </ul>
       </nav><!-- .nav-menu -->
@@ -79,10 +77,10 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Portfoio Details</h2>
+          <h2>Portfolio Details</h2>
           <ol>
-            <li><a href="index.html">Home</a></li>
-            <li>Portfoio Details</li>
+            <li><a href="/">Home</a></li>
+            <li>Portfolio Details</li>
           </ol>
         </div>
 
@@ -95,18 +93,19 @@
 
         <div class="portfolio-details-container">
 
-          <div class="owl-carousel portfolio-details-carousel">
-            <img src="static/img/portfolio/bokeh.png" class="img-fluid" alt="">
-            <img src="static/img/portfolio-details-2.jpg" class="img-fluid" alt="">
-            <img src="static/img/portfolio-details-3.jpg" class="img-fluid" alt="">
+          <script type="text/javascript" src={{cdn_js | safe}}></script>
+          <div class="/portfolio">
+          <h1>Amazon Stock Chart</h1>
           </div>
+          {{script1 | safe}}
+          {{div1 | safe}}
 
           <div class="portfolio-info">
             <h3>Project information</h3>
             <ul>
-              <li><strong>Category</strong>: Web design</li>
-              <li><strong>Client</strong>: ASU Company</li>
-              <li><strong>Project date</strong>: 01 March, 2020</li>
+              <li><strong>Category</strong>: Data Visualisation</li>
+              <li><strong>Visual Lib.</strong>: bokeh </li>
+              <li><strong>Data Lib. </strong>: pandas_datareader</li>
               <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
             </ul>
           </div>
@@ -114,9 +113,10 @@
         </div>
 
         <div class="portfolio-description">
-          <h2>This is an example of portfolio detail</h2>
-          <p>
-            Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
+          <h2>Data Visualisation Project</h2>
+          <p>The above chart shows the stock data for Amazon between: 2019-03-10 and 2019-05-10. 
+            A CandleStick chart is a style of financial chart that can be used to show stock market data.
+            It is fully interactive with all possible options available shown to the right of the graph.
           </p>
         </div>
 
@@ -144,20 +144,20 @@
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="static/vendor/jquery/jquery.min.js"></script>
-  <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="static/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="static/vendor/php-email-form/validate.js"></script>
-  <script src="static/vendor/waypoints/jquery.waypoints.min.js"></script>
-  <script src="static/vendor/counterup/counterup.min.js"></script>
-  <script src="static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="static/vendor/venobox/venobox.min.js"></script>
-  <script src="static/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="static/vendor/typed.js/typed.min.js"></script>
-  <script src="static/vendor/aos/aos.js"></script>
+  <script src="../static/vendor/jquery/jquery.min.js"></script>
+  <script src="../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../static/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="../static/vendor/php-email-form/validate.js"></script>
+  <script src="../static/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="../static/vendor/counterup/counterup.min.js"></script>
+  <script src="../static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../static/vendor/venobox/venobox.min.js"></script>
+  <script src="../static/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="../static/vendor/typed.js/typed.min.js"></script>
+  <script src="../static/vendor/aos/aos.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="static/js/main.js"></script>
+  <script src="../static/js/main.js"></script>
 
 </body>
 

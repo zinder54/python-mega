@@ -2,7 +2,7 @@
 <html>
    <head>
        <title>Flask App</title>
-       <link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.min.css' )}}"
+       <link rel="stylesheet" href="{{url_for('static',filename='css/style.css' )}}"
        <!-- ^^ links it to the css file in the static folder for formatting -->
    </head>
   <body>
@@ -13,7 +13,7 @@
           <ul class='menu'>
             <li><a href="{{url_for('home') }}">home</a></li>
             <li><a href="{{url_for ('about') }}">about</a></li>
-            <li><a href="{{url_for ('Plot') }}">Plot</a></li>
+            <li><a href="{{url_for ('plot') }}">Plot</a></li>
           </ul>
         </nav></strong>
       </div>
