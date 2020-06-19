@@ -52,7 +52,7 @@ def home():#creates function for said page
 
 @app.route('/portfolio/folium-map') ##same as above but for about
 def about():
-    return render_template("folium-map.html")
+    return render_template("map.html")
 
 @app.route('/plot')
 def plot():
