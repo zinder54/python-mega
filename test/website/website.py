@@ -1,5 +1,5 @@
-from flask import Flask, render_template
-import folium
+from flask import Flask, render_template, request
+from contact.send_email import send_email
 
 app =Flask(__name__) #creates the app
 
@@ -46,9 +46,17 @@ def portfolio():
     return render_template("portfolio-details.html",script1=script1,div1=div1,cdn_js=cdn_js)
 
 
-@app.route('/') ##creates the page and its location
+@app.route('/', methods=["GET", "POST"]) ##creates the page and its location
 def home():#creates function for said page
-    return render_template("index.html")##renders the page and points to html in templates folder
+    if request.method == "GET":
+        return render_template("index.html", message="")
+    else:
+        email_address = request.form["email"]##renders the page and points to html in templates folder
+        subject = request.form["subject"]
+        name = request.form["name"]
+        message = request.form["message"]
+        send_email(email_address, name, subject, message)
+        #return render_template("index.html")
 
 @app.route('/portfolio/folium-map') ##same as above but for about
 def about():
